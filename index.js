@@ -5,6 +5,7 @@ const conn = require('./db/conn');
 const userRouter = require('./routes/users');
 const slotAvailableRouter = require('./routes/availableSlots');
 const bookAvailableSlotsRouter = require('./routes/bookSlots');
+require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3000;
 
