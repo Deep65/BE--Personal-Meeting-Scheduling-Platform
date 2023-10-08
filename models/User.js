@@ -18,7 +18,7 @@ const User = sequelize.define('User', {
   email: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true,
+    // unique: true,
     validate: {
       isEmail: true, // Ensure the email is in a valid format
     },
@@ -36,10 +36,10 @@ const User = sequelize.define('User', {
   },
   otp: {
     type: DataTypes.NUMBER,
-    allowNull: false,
+    // allowNull: false,
   },
   refreshToken: {
-    type: DataTypes.NUMBER,
+    type: DataTypes.STRING,
     allowNull: true,
   },
   isActivated: {
